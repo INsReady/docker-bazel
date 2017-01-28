@@ -16,7 +16,7 @@ Bazel is Google's build tool, now publicly available in Beta. Bazel has built-in
 The basic pattern for starting a `bazel` instance is:
 
 ```console
-$ docker run --rm -v "$PWD":/CONTAINER_PATH -d insready/bazel SOME-COMMAND
+$ docker run --rm -v "$PWD":/usr/src/app -d insready/bazel SOME-BAZEL-COMMAND
 ```
 
 # License
