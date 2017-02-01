@@ -8,6 +8,7 @@ RUN apt-get update \
   && apt-get install -y bazel \
   && rm -rf /var/lib/apt/lists/*
 
-# Create app directory
-RUN mkdir -p /usr/src/app
+# Set up workspace
+RUN mkdir -p /usr/src/app \
+  && export WORKSPACE=/usr/src/app
 WORKDIR /usr/src/app
