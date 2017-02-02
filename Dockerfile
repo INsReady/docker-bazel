@@ -9,6 +9,6 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/*
 
 # Set up workspace
-RUN mkdir -p /usr/src/app \
-  && export WORKSPACE=/usr/src/app
+RUN mkdir -p /usr/src/app
+ENV WORKSPACE /usr/src/app
 WORKDIR /usr/src/app

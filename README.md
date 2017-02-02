@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest` (*Dockerfile*)](https://github.com/INsReady/docker-bazel/blob/master/dev/Dockerfile)
+-	[`latest` (*Dockerfile*)](https://github.com/INsReady/docker-bazel/blob/master/Dockerfile)
 
 This image is updated via pull requests to [the `INsReady/docker-bazel` GitHub repo](https://github.com/INsReady/docker-bazel).
 
@@ -16,7 +16,7 @@ Bazel is Google's build tool, now publicly available in Beta. Bazel has built-in
 The basic pattern for starting a `bazel` instance is:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/app -d insready/bazel SOME-BAZEL-COMMAND
+$ docker run --rm -v "$PWD":/usr/src/app -d insready/bazel bazel SOME-BAZEL-COMMAND
 ```
 
 # License
